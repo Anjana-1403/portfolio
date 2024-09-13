@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="https://kit.fontawesome.com/affeab23de.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <link rel="preload" href=".\images\stylized_mushrooms.glb" as="fetch" crossorigin="anonymous">
 </head>
 <body>
 <div id="header">
@@ -30,8 +32,8 @@
             <p id="mysel"><b>interests towards AI and Problem solving aspects.<br> I seeking an opportunity to uplift my skills<br> and I'm eager to learn new things.</p>
             <br>
             <a href="C:\Users\ANJANA\Downloads\Resume new.pdf" cla="btn"><button class="btn">Download CV   <i class="fa-solid fa-file"> </i></button></a>
-
         </div>
+        
     </div>
 </div>
 
@@ -391,6 +393,12 @@
     <br>
     <br>
 </div>
+
+<model-viewer src=".\images\stylized_mushrooms.glb" alt="An optimized 3D model"
+auto-rotate camera-controls shadow-intensity="0.5" loading="lazy"
+min-field-of-view="35deg" max-field-of-view="65deg"
+draco-decoder-path="https://cdn.jsdelivr.net/npm/@google/model-viewer@v1.3.0/dist/">
+</model-viewer>
 
 <script src="circle-progress.js"></script>
 <script>
